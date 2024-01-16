@@ -31,7 +31,7 @@ const Navigation = () => {
 						currentUser ? (
 							<span onClick={signOutUser} className='nav-link'>SIGN OUT</span>
 							) : (
-							<Link classNAme='nav-link' to='/auth'>
+							<Link className='nav-link' to='/auth'>
 								SIGN IN
 							</Link>
 						)
@@ -40,7 +40,7 @@ const Navigation = () => {
 				</div>
 				{isCartOpen && <CartDropdown />}
       </div>
-      <Outlet />
+			<Outlet />
     </Fragment>
   );
 };
